@@ -1,17 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import BannerHeader from './components/BannerHeader.jsx';
-import Navbar from './components/Navbar.jsx';
-import Footer from './components/Footer.jsx';
-import Home from './pages/Home.jsx';
-import About from './pages/About.jsx';
-import Work from './pages/Work.jsx';
-import Team from './pages/Team.jsx';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import BannerHeader from "./components/BannerHeader.jsx";
+import BannerHeaderDesktop from "./components/BannerHeaderDesktop.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Work from "./pages/Work.jsx";
+import Team from "./pages/Team.jsx";
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-50 font-body">
         <BannerHeader />
+        <BannerHeaderDesktop />
         <Navbar />
         <main>
           <Routes>

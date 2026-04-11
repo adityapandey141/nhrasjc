@@ -2,7 +2,7 @@ import { Mail } from "lucide-react";
 
 const BannerHeader = () => {
   return (
-    <div className="w-full">
+    <div className="w-full block md:hidden">
       {/* Top Red Bar - Registration Details */}
 
       {/* Main Blue Banner */}
