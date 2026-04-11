@@ -14,6 +14,7 @@ import {
   Calendar,
   MapPin,
 } from "lucide-react";
+import InstagramFeed from "../components/InstagramFeed";
 
 const heroSlides = [
   {
@@ -75,26 +76,25 @@ const stats = [
 
 const activities = [
   {
-    image: "activity1.jpg",
+    image: "activity4.jpg",
     title: "Human Rights Awareness Camp",
     date: "15 March 2024",
     location: "Vadodara",
   },
   {
-    image: "activity2.jpg",
+    image: "activity5.jpg",
     title: "Women Skill Workshop",
     date: "28 February 2024",
     location: "Ahmedabad",
   },
   {
-    image: "activity3.jpg",
+    image: "activity7.jpg",
     title: "Youth Leadership Summit",
     date: "10 February 2024",
     location: "Mumbai",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=400&q=80",
+    image: "activity8.jpg",
     title: "Anti-Corruption Rally",
     date: "26 January 2024",
     location: "New Delhi",
@@ -357,14 +357,14 @@ const Home = () => {
                 </div>
                 <div className="p-5">
                   <div className="flex items-center gap-4 text-sm text-gray-500 mb-2">
-                    <span className="flex items-center gap-1">
+                    {/* <span className="flex items-center gap-1">
                       <Calendar size={14} />
                       {activity.date}
                     </span>
                     <span className="flex items-center gap-1">
                       <MapPin size={14} />
                       {activity.location}
-                    </span>
+                    </span> */}
                   </div>
                   <h3 className="font-heading font-bold text-gray-800 group-hover:text-purple-700 transition-colors">
                     {activity.title}
@@ -375,6 +375,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Instagram Feed */}
+      <InstagramFeed />
 
       {/* CTA Section */}
       <section className="py-20 bg-gray-900 text-white">

@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Instagram embed responsive */
+.instagram-embed-container {
+  display: flex;
+  justify-content: center;
+}
+.instagram-embed-container .instagram-media {
+  min-width: 100% !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
