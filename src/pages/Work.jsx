@@ -107,9 +107,9 @@ const Work = () => {
                     className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-gradient-to-r from-purple-700 to-red-600 text-white text-xs px-3 py-1 rounded-full">
+                    {/* <span className="bg-gradient-to-r from-purple-700 to-red-600 text-white text-xs px-3 py-1 rounded-full">
                       {project.category}
-                    </span>
+                    </span> */}
                   </div>
                 </div>
                 <div className="p-6">

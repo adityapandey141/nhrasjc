@@ -172,10 +172,10 @@ const Home = () => {
                 {heroSlides[currentSlide].subtitle}
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/about" className="btn-gradient">
+                <Link to="/contact" className="btn-gradient">
                   Join Us
                 </Link>
-                <button className="btn-white">Donate Now</button>
+                {/* <button className="btn-white">Donate Now</button> */}
               </div>
             </div>
           </div>
@@ -390,10 +390,12 @@ const Home = () => {
             communities. Your support makes a difference.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/team" className="btn-gradient">
+            <Link to="/contact" className="btn-gradient">
               Become a Volunteer
             </Link>
-            <button className="btn-white">Donate Now</button>
+            <Link to="/contact" className="btn-white">
+              Donate Now
+            </Link>
           </div>
         </div>
       </section>

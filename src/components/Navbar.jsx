@@ -6,7 +6,9 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Our Work", path: "/work" },
+  { name: "Gallery", path: "/gallery" },
   { name: "Core Team", path: "/team" },
+  { name: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {
@@ -35,9 +37,9 @@ const Navbar = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
+          {/* <Link to="/" className="flex items-center gap-3">
             <img src="/logo.png" alt="Logo" className="h-20" />
-          </Link>
+          </Link> */}
 
           <div className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
@@ -60,7 +62,7 @@ const Navbar = () => {
                 />
               </Link>
             ))}
-            <Link to="/" className="ml-4 btn-gradient text-sm py-2">
+            <Link to="/contact" className="ml-4 btn-gradient text-sm py-2">
               Donate Now
             </Link>
           </div>
@@ -89,7 +91,10 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Link to="/" className="mt-4 mx-4 btn-gradient text-center">
+              <Link
+                to="/contact"
+                className="mt-4 mx-4 btn-gradient text-center"
+              >
                 Donate Now
               </Link>
             </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Linkedin, Mail } from "lucide-react";
 
 const teamMembers = [
@@ -90,10 +91,12 @@ const Team = () => {
       </section>
 
       {/* Core Team */}
-      {/* <section className="section-padding bg-white">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <span className="text-orange-500 font-semibold uppercase tracking-wider text-sm">Leadership</span>
+            <span className="text-orange-500 font-semibold uppercase tracking-wider text-sm">
+              Leadership
+            </span>
             <h2 className="section-title mt-2">Executive Committee</h2>
           </div>
 
@@ -111,25 +114,35 @@ const Team = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4">
                     <div className="flex gap-3">
-                      <a href="#" className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-purple-700 transition-all">
+                      <a
+                        href="#"
+                        className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-purple-700 transition-all"
+                      >
                         <Linkedin size={18} />
                       </a>
-                      <a href="#" className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-purple-700 transition-all">
+                      <a
+                        href="#"
+                        className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-purple-700 transition-all"
+                      >
                         <Mail size={18} />
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-heading font-bold text-lg text-gray-800">{member.name}</h3>
-                  <p className="text-purple-700 font-medium text-sm mb-3">{member.role}</p>
+                  <h3 className="font-heading font-bold text-lg text-gray-800">
+                    {member.name}
+                  </h3>
+                  <p className="text-purple-700 font-medium text-sm mb-3">
+                    {member.role}
+                  </p>
                   <p className="text-gray-600 text-sm">{member.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Advisory Board */}
       {/* <section className="section-padding bg-gray-50">
@@ -168,10 +181,15 @@ const Team = () => {
             society.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="btn-white">Become a Volunteer</button>
-            <button className="bg-white/20 px-6 py-3 rounded-lg font-semibold hover:bg-white/30 transition-colors">
+            <Link to="/contact" className="btn-white">
+              Become a Volunteer
+            </Link>
+            <Link
+              to="/contact"
+              className="bg-white/20 px-6 py-3 rounded-lg font-semibold hover:bg-white/30 transition-colors"
+            >
               Partner With Us
-            </button>
+            </Link>
           </div>
         </div>
       </section>
